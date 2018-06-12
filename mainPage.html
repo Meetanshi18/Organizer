@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="style2.css" rel="stylesheet">
+        
+        <title>Organizer</title>
+    </head>
+    <body onload="onload()">
+        <div class="header">
+            <div id="title">ORGANIZER</div>
+            <div id="newUser" onclick="addUser()" hidden >New User?</div>
+            <div id="homeBtn" onclick="window.location.reload()" hidden></div>
+
+        </div>
+        <div class="mainGrid">
+            <div id="sideBar">
+                
+            </div>
+            <div class="grid2">
+                <div id="users">
+                    
+                </div>
+                
+                <div id="mainPlace0" class="mainPlace" >
+                    
+                    <form id="userForm" >
+                        <div class="formObj">
+                                <label >ENTER TO ADD A USER OR CHOOSE FROM ALREADY ADDED USERS LISTED ABOVE</label>
+                        </div>
+                        <div class="formObj">
+                                <input  type="text" placeholder="Name" id="userName">
+                        </div>
+                        <div class="formObj">
+                                <button  type="submit" id="saveUserBtn">Add</button>
+                        </div>
+                        
+                    </form>
+                    
+                </div>
+                <div class="mainPlace" id="mainPlace1" hidden>
+                    
+                        <h1>
+                            You haven't saved any schedules yet. Click on the create button below to get started!
+                            <br>
+                            <button id="createBtn">CREATE</button>
+                         </h1>
+                    
+                    
+
+                </div>
+                <div class="mainPlace" id="schedulePage" hidden >
+                    <span class="something">
+                        Create your schedule
+                    </span>
+                    <form onsubmit="return false">
+                        <div class="scheduleObj">
+                            <label>Time Interval</label>
+                            <input type="text" id="time1" class="time">
+                            <label>Task</label>
+                            <input type="text" id="task1" class="task">
+                        </div>
+                        <div class="scheduleObj">
+                                <label>Time Interval</label>
+                                <input type="text" id="time2" class="time">
+                                <label>Task</label>
+                                <input type="text" id="task2" class="task">
+                        </div>
+                        <div class="scheduleObj">
+                                <label>Time Interval</label>
+                                <input type="text" id="time3" class="time">
+                                <label>Task</label>
+                                <input type="text" id="task3" class="task">
+                        </div>
+                        <div class="scheduleObj">
+                            <button id="saveSchBtn">SAVE</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="mainPlace" id="savedSchedule"></div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
