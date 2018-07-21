@@ -1,0 +1,25 @@
+
+.contents{
+    width : 100%;
+    background-color: black;
+}
+
+.users{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+
+}
+.mainPlace{
+    margin-top: 30%;
+    align-content: center;
+    font-size: 5rem;
+}
+.userForm{
+    align-content: center;
+}
+.user{
+    display: block;
+    background-color: aliceblue;
+}
